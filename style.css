@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.cuadro{
+    width:150px;
+    height: 150px;
+    position: relative;
+    transition: all 0.5s;
+    transform: rotate(45deg);
+}
+
+span:nth-child(1){
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: amarillo 1.5s ease-in infinite;
+}
+
+span:nth-child(2){
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top:0;
+    left: 50%;
+    background-color: blue;
+    animation: azul 1.5s ease-in infinite;
+}
+
+span:nth-child(3){
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top:50%;
+    left: 0%;
+    background-color: red;
+    
+    animation: rojo 1.5s ease-in infinite;
+}
+
+span:nth-child(4){
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    background-color: green;
+    
+    animation: verde 1.5s ease-in infinite;
+}
+
+/*ANIMATION*/
+
+@keyframes azul{
+    0%{transform: rotate(0deg);
+        margin: 0;}
+
+    20%{transform:rotate(0deg);
+    margin: -55px 55px;}
+
+    40%{transform: rotate(90deg);
+    margin:-55px 55px;}
+
+    60%{transform: rotate(90deg);
+        margin:0px 0px;}
+
+    100%{transform: rotate(90deg);
+            margin: 0;}
+}
+
+@keyframes amarillo{
+    0%{transform: rotate(0deg);
+        margin: 0;}
+
+    20%{transform:rotate(0deg);
+    margin: -55px -55px;}
+
+    40%{transform: rotate(90deg);
+    margin:-55px -55px;}
+
+    60%{transform: rotate(90deg);
+        margin:0px 0px;}
+
+    100%{transform: rotate(90deg);
+            margin: 0;}
+}
+
+@keyframes rojo{
+    0%{transform: rotate(0deg);
+        margin: 0;}
+
+    20%{transform:rotate(0deg);
+    margin: 55px -55px;}
+
+    40%{transform: rotate(90deg);
+    margin:55px -55px;}
+
+    60%{transform: rotate(90deg);
+        margin:0px 0px;}
+
+    100%{transform: rotate(90deg);
+            margin: 0;}
+}
+
+@keyframes verde{
+    0%{transform: rotate(0deg);
+        margin: 0;}
+
+    20%{transform:rotate(0deg);
+    margin: 55px 55px;}
+
+    40%{transform: rotate(90deg);
+    margin:55px 55px;}
+
+    60%{transform: rotate(90deg);
+        margin:0px 0px;}
+
+    100%{transform: rotate(90deg);
+            margin: 0;}
+}
+
